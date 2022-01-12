@@ -3,14 +3,13 @@ from rest_framework.response import Response
 from .serializers import OrderSerializer
 from .models import Order
 
-
 @api_view(['GET'])
 def apiOverview(request):
     api_urls={
-        'Orders list':'/list/',
-        'Create':'/create/',
-        'Update status':'/update-status/',
-        'Orders':'/orders/clients/<str:client_id>/?from=<date>&to=<date>/',
+        'Orders list':'/list',
+        'Create':'/create',
+        'Update status':'/update-status',
+        'Orders':'/orders/clients/<str:client_id>/?from=<date>&to=<date>',
     }
     return Response(api_urls)
 @api_view(['GET'])
