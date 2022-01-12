@@ -8,7 +8,7 @@ Python and Django need to be installed
 pip install django
 pip install djangorestframework
 pip install mysqlclient
-pip install django-filters
+pip install django-filter
 
 py manage.py runserver
 ```
